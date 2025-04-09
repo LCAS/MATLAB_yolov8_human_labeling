@@ -4,7 +4,7 @@ This guide explains how to integrate a pretrained YOLOv8 model with MATLAB's Gro
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 - MATLAB R2023b or later
 - Toolboxes:
@@ -14,7 +14,7 @@ This guide explains how to integrate a pretrained YOLOv8 model with MATLAB's Gro
 
 ---
 
-## 🚀 Steps to Use YOLOv8 with Ground Truth Labeler in MATLAB
+## Steps to Use YOLOv8 with Ground Truth Labeler in MATLAB
 
 ### 1. Download the Repository
 
