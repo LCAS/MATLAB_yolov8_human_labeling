@@ -1,6 +1,6 @@
 # YOLOv8 Human Labeling in MATLAB using Ground Truth Labeler
 
-This guide explains how to integrate a pretrained YOLOv8 model with MATLAB's Ground Truth Labeler app to automatically generate human bounding box annotations and manually assign persistent IDs using attributes.
+This guide explains how to integrate a pretrained YOLOv8 model with MATLAB's Ground Truth Labeler App to automatically generate human bounding box annotations and manually assign IDs using attributes.
 
 ---
 
