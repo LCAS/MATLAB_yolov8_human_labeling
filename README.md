@@ -86,7 +86,7 @@ groundTruthLabeler
 
 ### 9. Select the custom algorithm
 
-- Choose **"My Algorithm"** from the automation list.
+- Choose **"YOLOv8 Human Labeler"** from the automation list.
 
 ---
 
