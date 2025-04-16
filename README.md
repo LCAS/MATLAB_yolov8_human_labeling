@@ -18,8 +18,9 @@ This guide explains how to integrate a pretrained YOLOv8 model with MATLAB's Gro
 
 ### 1. Download the repository
 
-Download the YOLOv8 model integration from:
-> 🔗 https://github.com/LCAS/MATLAB_yolov8_human_labeling.git
+Download the YOLOv8 model integration from here:
+- can use git clone https://github.com/LCAS/MATLAB_yolov8_human_labeling.git
+- Or just download as a zip.
 
 ---
 
