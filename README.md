@@ -19,98 +19,54 @@ This guide explains how to integrate a pretrained YOLOv8 model with MATLAB's Gro
 ### 1. Download the repository
 
 Download the YOLOv8 model integration from:
-> 🔗 https://github.com/matlab-deep-learning/Pretrained-YOLOv8-Network-For-Object-Detection.git
+> 🔗 https://github.com/LCAS/MATLAB_yolov8_human_labeling.git
 
 ---
 
-### 2. Add the folder to MATLAB path
+### 2. Import the YOLO method
 
-In MATLAB, navigate to the downloaded folder in the **Current Folder** pane and run:
-
-```matlab
-addpath(genpath(pwd));
-```
+In MATLAB, following this [video](https://universityoflincoln-my.sharepoint.com/:v:/g/personal/zhuang_lincoln_ac_uk/EVvNP4r3_99Lp3phhGhX1ooBHJff1cgMyT2Dn_tcPwoidQ?e=WFU7d4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D), import the YOLO method.
 
 ---
 
-### 3. Install required toolboxes
+### 3. Start auto labelling
 
-Go to the **Home** tab → click **Add-Ons** → **Get Add-Ons**.
-In the Add-On Explorer, search for and install the following:
-
-- Computer Vision Toolbox
-- Deep Learning Toolbox
-- Deep Learning Toolbox Converter for ONNX Model Format
+The same as the previous method.
 
 ---
 
-### 4. Prepare your files
-
-- Place the custom automation file `yolov8_label.m` in the same folder.
-- Add your `.png` image folder (e.g., `output_images`) and the file `load_timestamps.m` (from this repo: https://github.com/Cyano0/Label-the-AoC-Rosbag-Data/tree/main) into the same directory.
-- Run the following command in MATLAB:
-
-```matlab
-load_timestamps;
-```
-
----
-
-### 5. Open the Ground Truth Labeler App
-
-In the MATLAB Command Window, run:
-
-```matlab
-groundTruthLabeler
-```
-
----
-
-### 6. Load your images
-
-- Load the folder containing your `.png` frames (e.g., `output_images`).
-
----
-
-### 7. Create a label
+### 4. Create a label
 
 - Add a new **rectangle ROI** label named **"human"**.
 
 ---
 
-### 8. Import the custom algorithm
-
-- Go to **Select Algorithm** → click **Import Algorithm** → choose `yolov8_label.m`.
-
----
-
-### 9. Select the custom algorithm
-
-- Choose **"YOLOv8 Human Labeler"** from the automation list.
-
----
-
-### 10. Run the automation
-
-- Click **Automate** → then click **Run**. YOLOv8 will automatically draw bounding boxes for detected humans.
-
----
-
-### 11. Accept the results
-
-- Once satisfied, click **Accept** to keep the generated labels.
-
----
-
-### 12. Add an ID attribute
+### 5. Add an ID attribute
 
 - Click the **checkbox** next to the label **"human"** in the label list.
 - Click **Attribute** → Add a new attribute called **ID**.
 - Set the **Type** to **"List"** and provide values like `1, 2, 3, ...`.
 
 ---
+### 6. Import the custom algorithm
 
-### 13. Assign IDs to detections
+- Go to **Select Algorithm** → click **Import Algorithm** → choose `yolov8_label.m`.
+
+---
+
+### 7. Select the custom algorithm
+
+- Choose **"YOLOv8 Human Labeler"** from the automation list.
+
+---
+
+### 8. Run the automation
+
+- Click **Automate** → then click **Run**. YOLOv8 will automatically draw bounding boxes for detected humans.
+
+---
+
+### 9. Assign IDs to detections
 
 For each frame:
 - Click on each bounding box.
@@ -118,4 +74,8 @@ For each frame:
 
 ---
 
+### 10. Accept the results
 
+- Once satisfied, click **Accept** to keep the generated labels.
+
+---
