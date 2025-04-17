@@ -10,7 +10,7 @@ This guide explains how to integrate a pretrained YOLOv8 model with MATLAB's Gro
 - Toolboxes:
   - Computer Vision Toolbox
   - Deep Learning Toolbox
-  - Deep Learning Toolbox Converter for ONNX Model Format
+  - Deep Learning Toolbox **Converter for ONNX Model Format**
 
 ---
 
